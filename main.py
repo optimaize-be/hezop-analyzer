@@ -9,8 +9,8 @@ from openai import OpenAI  # new-style OpenAI client
 # ==========================
 # Streamlit Page Config
 # ==========================
-st.set_page_config(page_title="P&ID Analysis Chatbot", layout="wide")
-st.title("🧠 P&ID Analysis Chatbot")
+st.set_page_config(page_title="OptimAIze Analyzer", layout="wide")
+st.title("🧠 OptimAIze Analyzer")
 
 # ==========================
 # Load environment variables from .env
@@ -403,3 +403,4 @@ if user_input:
     # Show assistant reply and store in chat_history (MEMORY)
     st.chat_message("assistant").markdown(reply)
     st.session_state.chat_history.append({"role": "assistant", "content": reply})
+
